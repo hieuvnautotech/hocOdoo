@@ -1,0 +1,6 @@
+<odoo>
+  <data>
+    <menuitem id="Standard_menu" name="Standard" />
+    <menuitem id="Information_menu" name="Information" parent="Standard_menu" />
+  </data>
+</odoo>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="popup_basic" model="ir.ui.view">
+        <field name="name">Popup Basic</field>
+        <field name="model">standardmodel</field>
+        <field name="arch" type="xml">
+            <tree >
+                <field name='name' readonly='1'/>
+                <field name='display_text' readonly='1'/>
+                <field name="product_ids" />
+            </tree>
+        </field>
+    </record>
+</odoo>

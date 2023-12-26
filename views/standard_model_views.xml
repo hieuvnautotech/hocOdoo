@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Tree(list) View -->
+    <record id="model_view_tree" model="ir.ui.view">
+    <!-- ten cua form -->
+        <field name="name">Model List</field> 
+        <field name="model">standardmodel</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="code"/>    
+                <field name="name"/>
+                <field name="remark"/>
+                <field name="product_ids"/>
+                <field name="create_uid"/>
+                <field name="create_date"/>
+                <field name="write_uid"/>
+                <field name="write_date"/>
+                <!-- <button string="Open Popup" class="oe_highlight" type="object" name="open_popup"/> -->
+
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="model_view_form" model="ir.ui.view">
+        <field name="name">Model Form</field>
+        <field name="model">standardmodel</field>
+        <field name="arch" type="xml">
+            <form>  
+                <sheet>
+                    <group>
+                        <field name="code" string="Model #"/>
+                        <field name="name" string="Description"/>
+                        <field name="remark" string="Remark"/>
+                        
+                    </group>
+                   <!-- <group>
+                        <field name="product_ids" string="Products" widget='many2many_tags'/>
+                    </group> -->
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id='model_menu_action' model='ir.actions.act_window'>
+        <field name="name">Model</field>
+        <field name="res_model">standardmodel</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Model" id="model_menu" parent="Information_menu" action="model_menu_action"/>
+</odoo>
