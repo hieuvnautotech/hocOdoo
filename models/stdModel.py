@@ -27,4 +27,4 @@ class stdModel(models.Model):
     #         'context': {
     #             'default_display_text':'TEXT DEMO'
     #         }
-    #     }
+    #     }asdasdasdasd
