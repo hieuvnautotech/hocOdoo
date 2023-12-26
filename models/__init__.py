@@ -1,1 +1,1 @@
-from . import standardModel, standard_product, hr_employee
+from . import hr_employee, stdModel

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="popup_basic" model="ir.ui.view">
         <field name="name">Popup Basic</field>
@@ -11,4 +11,4 @@
             </tree>
         </field>
     </record>
-</odoo>
+</odoo> -->

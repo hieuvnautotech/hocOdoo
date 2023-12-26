@@ -1,8 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!-- <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 <record model="ir.ui.view" id="hr_employee_tree_inherit">
         <field name="name">hr.employee.tree.inherit</field>
         <field name="model">hr.employee</field>
+        lay tu External ID cho ref
         <field name="inherit_id" ref="hr.view_employee_tree"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='name']" position="before">
@@ -36,4 +37,4 @@
 
     <menuitem name="Employee" id="employee_menu" parent="Information_menu" action="employee_action"/>
 
-</odoo>
+</odoo> -->

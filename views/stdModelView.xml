@@ -4,13 +4,13 @@
     <record id="model_view_tree" model="ir.ui.view">
     <!-- ten cua form -->
         <field name="name">Model List</field> 
-        <field name="model">standardmodel</field>
+        <field name="model">stdmodel</field>
         <field name="arch" type="xml">
             <tree>
                 <field name="code"/>    
                 <field name="name"/>
                 <field name="remark"/>
-                <field name="product_ids"/>
+                <!-- <field name="product_ids"/> -->
                 <field name="create_uid"/>
                 <field name="create_date"/>
                 <field name="write_uid"/>
@@ -24,7 +24,7 @@
     <!-- Form View -->
     <record id="model_view_form" model="ir.ui.view">
         <field name="name">Model Form</field>
-        <field name="model">standardmodel</field>
+        <field name="model">stdmodel</field>
         <field name="arch" type="xml">
             <form>  
                 <sheet>
@@ -44,7 +44,7 @@
 
     <record id='model_menu_action' model='ir.actions.act_window'>
         <field name="name">Model</field>
-        <field name="res_model">standardmodel</field>
+        <field name="res_model">stdmodel</field>
         <field name="view_mode">tree,form</field>
     </record>
 
