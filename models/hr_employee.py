@@ -5,4 +5,4 @@ class Staff(models.Model):
     _inherit = 'hr.employee'
 
 
-    code = fields.Char(string='Employee Code', required=True)
+    code = fields.Char(string='Employee Code', required=True)  
